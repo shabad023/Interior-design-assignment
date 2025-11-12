@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downton Abbey Ka Style Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght=700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: 
+                linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+                url('Wallpaper.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Inter', sans-serif;
+            color: #4a2c2a;
+            font-weight: 600;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: #78350f; /* Amber-brown for headings */
+        }
+        .nav-active {
+            font-weight: bold;
+            color: #b45309; /* Darker amber */
+            border-bottom: 2px solid #b45309;
+        }
+        .tab-button {
+            transition: all 0.3s ease;
+        }
+        .tab-active {
+            background-color: #78350f !important;
+            color: #f7f3e8 !important;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(74, 44, 42, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        /* Custom styles for image containers */
+        .image-container {
+            width: 100%;
+            height: 250px; /* Fixed height for consistency */
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures image covers the area, cropping if necessary */
+            object-position: center;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/90 backdrop-blur-sm shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-amber-900">The Highclere Digest</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-amber-900 px-3 py-2 rounded-md text-sm font-medium">Dil Se...</a>
+                        <a href="#worlds" class="nav-link text-gray-700 hover:text-amber-900 px-3 py-2 rounded-md text-sm font-medium">Do Alag Duniya</a>
+                        <a href="#evolution" class="nav-link text-gray-700 hover:text-amber-900 px-3 py-2 rounded-md text-sm font-medium">Style Ka Badlaav</a>
+                        <a href="#get-the-look" class="nav-link text-gray-700 hover:text-amber-900 px-3 py-2 rounded-md text-sm font-medium">Get the Look</a>
+                        <a href="#conclusion" class="nav-link text-gray-700 hover:text-amber-900 px-3 py-2 rounded-md text-sm font-medium">Aakhri Baat</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <select id="mobile-nav" class="bg-white border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-amber-800 focus:border-amber-800 block w-full p-2.5">
+                        <option value="#home">Menu</option>
+                        <option value="#home">Dil Se...</option>
+                        <option value="#worlds">Do Alag Duniya</option>
+                        <option value="#evolution">Style Ka Badlaav</option>
+                        <option value="#get-the-look">Get the Look</option>
+                        <option value="#conclusion">Aakhri Baat</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+
+        <section id="home" class="my-16 scroll-mt-20">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="image-container mx-auto max-w-xl">
+                    <img src="Highclere Library.jpg" alt="Highclere Castle ki library, jahan red aur gold colours hain">
+                </div>
+                <h2 class="text-4xl font-bold mb-4 mt-6">Letter from Shabad and Arnav (Dil Se...)</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Hello Smriti Ma'am and Aditya Jain Sir,
+                    <br><br>
+                    Jab hum 'Downton Abbey' dekhte hain, toh hum sirf Grantham family ki life nahi dekhte. Hum ek poori duniya dekhte hain. Woh grand rooms, woh chamakte chandeliers, aur servants ka area... har cheez ek kahani batati hai.
+                    Yeh ghar, Downton, sirf ek building nahi hai; yeh show ka ek main character hai. Iska design batata hai ki uss samay (early 1900s) mein life kaisi thi: rules, status aur "class" sabse important they.
+                    <br><br>
+                    Is interactive guide mein, hum issi design ke jaadu ko explore karenge. Hum "upstairs" ki shaan aur "downstairs" ki functional duniya, dono ko samjhenge. Toh chaliye, Grantham family ke grand house ka tour shuru karte hain!
+                </p>
+            </div>
+        </section>
+
+        <hr class="border-t-2 border-amber-200 max-w-xs mx-auto my-20">
+
+        <section id="worlds" class="my-16 scroll-mt-20">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-4xl font-bold mb-4">Upstairs vs. Downstairs: Do Alag Duniya</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Downton Abbey ka ghar do hisson mein bata hua tha. "Upstairs", jahan family rehti thi, aur "Downstairs", jahan servants kaam karte they. Dono ki duniya aur design bilkul alag they. Neeche diye gaye tabs par click karke inn dono duniyaon ko explore karein.
+                </p>
+            </div>
+
+            <div class="flex justify-center space-x-4 mb-10">
+                <button id="upstairs-btn" class="tab-button w-1/2 md:w-1/3 py-4 px-6 text-xl font-bold bg-white text-amber-900 rounded-lg shadow-md tab-active" onclick="showWorld('upstairs')">
+                    UPSTAIRS
+                    <span class="block text-sm font-normal">(Shaan aur Status)</span>
+                </button>
+                <button id="downstairs-btn" class="tab-button w-1/2 md:w-1/3 py-4 px-6 text-xl font-bold bg-white text-amber-900 rounded-lg shadow-md" onclick="showWorld('downstairs')">
+                    DOWNSTAIRS
+                    <span class="block text-sm font-normal">(Kaam aur Function)</span>
+                </button>
+            </div>
+
+            <div id="upstairs-content" class="space-y-8">
+                <h3 class="text-3xl font-bold text-center">UPSTAIRS: Jahan Zindagi Dikhai Jaati Thi</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="card p-6">
+                        <div class="image-container">
+                            <img src="Red Drawing Room.jpg" alt="Downton Abbey ka red Drawing Room">
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3">Public Spaces (Library, Drawing Room)</h4>
+                        <p class="mb-4 text-gray-600">Yeh rooms show-off karne ke liye banaye gaye they. Yahan parties hoti thi, important guests aate they. Har cheez ko "impress" karne ke liye design kiya gaya تھا.</p>
+                        <h5 class="font-bold mb-2">Key Features:</h5>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li><strong>Rich Colours:</strong> Gehre rang jaise deep red, gold, aur forest green.</li>
+                            <li><strong>Luxurious Fabrics:</strong> Velvet (makhmal), silk (resham) aur brocade.</li>
+                            <li><strong>Woodwork:</strong> Deewaron par intricate (bareek) wood carvings, zyadatar mahogany ya oak ki.</li>
+                            <li><strong>Badi Paintings:</strong> Family ke bade-bade portraits (ancestors ki paintings).</li>
+                            <li><strong>Chandeliers (Jhoomar):</strong> Bade aur crystal ke jhoomar.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card p-6">
+                        <div class="image-container">
+                            <img src="Lady Mary's Bedroom.jpg" alt="Lady Mary ka bedroom, jismein elegant vanity table aur floral wallpaper hai">
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3">Private Spaces (Bedrooms)</h4>
+                        <p class="mb-4 text-gray-600">Yeh "private" spaces they, isliye yahan ka style thoda softer aur personal tha. Har bedroom, usmein rehne wale insaan ki personality dikhata tha.</p>
+                        <h5 class="font-bold mb-2">Key Features:</h5>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li><strong>Lighter Colours:</strong> Pastels (halke rang) jaise cream, light blue, aur pale pink.</li>
+                            <li><strong>Wallpaper:</strong> Floral (phool-patti) ya striped patterns.</li>
+                            <li><strong>Fireplace:</strong> Har bedroom mein ek fireplace zaroor hota tha.</li>
+                            <li><strong>Canopy Beds:</strong> Bade-bade beds, jinke upar fabric ka canopy hota tha.</li>
+                            <li><strong>Personal Touches:</strong> Vanity table, writing desk, aur chairs (chaise lounge).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-6 bg-amber-50 border border-amber-200">
+                    <div class="image-container mx-auto max-w-xl">
+                        <img src="Grand Dining Table.jpg" alt="Ek perfectly set dinner table ka close-up, silver cutlery aur crystal glasses ke saath">
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3 mt-6">Upstairs Ki Details: The Power of Perfection</h4>
+                    <p class="mb-4 text-gray-600">Yahan har choti cheez perfection ka example thi. Asli magic inhi details mein tha.</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><strong>The Dinner Table:</strong> Har course ke liye alag plate (Fine China), 5-6 tarah ke chammach-kaante (Silverware) jo ruler se naape jaate they, aur har drink ke liye alag crystal glass.</li>
+                        <li><strong>Personal Items:</strong> Har character ke paas unke personal silver-backed hairbrush, perfume ki bottles, aur leather-bound books hoti thi.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="downstairs-content" class="hidden space-y-8">
+                <h3 class="text-3xl font-bold text-center">DOWNSTAIRS: Jahan Zindagi Chalti Thi</h3>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="card p-6">
+                        <div class="image-container">
+                            <img src="Mrs. Patmore's Kitchen.jpg" alt="Mrs. Patmore ki kitchen, jismein copper ke bartan latak rahe hain">
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3 mt-6">The Kitchen (Ghar ka Engine)</h4>
+                        <p class="mb-4 text-gray-600">Yahan ka design bilkul opposite tha. Yahan "beauty" se zyada "FUNCTION" (kaam) par zor tha. Sab kuch simple, durable (tikaau) aur practical tha.</p>
+                        <h5 class="font-bold mb-2">Key Features:</h5>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li><strong>White Tiles:</strong> Deewaron par safed tiles, kyunki unhe saaf karna aasan tha (hygiene).</li>
+                            <li><strong>Copper Pots:</strong> Har size ke copper ke bartan latke rehte they.</li>
+                            <li><strong>Massive Tables:</strong> Beech mein ek bada lakdi (scrubbed pine) ka table.</li>
+                            <li><strong>Stone Floors:</strong> Zameen par pathar (stone) ya tiles, jinhe aasani se dho sakte they.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card p-6">
+                        <div class="image-container">
+                            <img src="Servants' Hall & Bell Board.jpg" alt="Servants' Hall, jahan bell board bhi hai">
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3 mt-6">Servants' Hall & Bell Board</h4>
+                        <p class="mb-4 text-gray-600">Yeh 'Downstairs' ke do sabse important hisse they, jo system ko chalaate they.</p>
+                        <h5 class="font-bold mb-2">Key Features:</h5>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li><strong>Servants' Hall:</strong> Yahan servants khana khaate they. Furniture bahut basic tha - lambi wooden benches aur tables. Koi decoration nahi.</li>
+                            <li><strong>The Bell Board (Ghantiyon ka Board):</strong> Yeh 'Downstairs' ka centre-piece tha. Har ghanti 'Upstairs' ke ek alag room se judi thi. Yeh system ka symbol tha.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-6 bg-blue-50 border border-blue-200">
+                    <div class="image-container mx-auto max-w-xl">
+                        <img src="Polishing Silver.jpg" alt="Servants' Hall mein polish kiye ja rahe silver spoons ka ek shot">
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3 mt-6 text-blue-900">Downstairs Ki Details: The Power of Service</h4>
+                    <p class="mb-4 text-gray-600">Yahan ka charm discipline aur precision (sateekta) mein tha.</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><strong>Uniforms:</strong> Har servant ki ek specific uniform thi. Housemaids ki alag, footmen ki alag. Yeh discipline dikhata tha.</li>
+                        <li><strong>Polished Silver:</strong> Servants ka ek bada kaam tha 'Upstairs' ki saari silver (chaandi) ko roz polish karna.</li>
+                        <li><strong>Ironed Newspapers:</strong> Lord Grantham ke padhne se pehle, newspaper ko iron (press) kiya jaata tha, taaki ink unke haathon par na lage!</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t-2 border-amber-200 max-w-xs mx-auto my-20">
+
+        <section id="evolution" class="my-16 scroll-mt-20">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-4xl font-bold mb-4">The Times Are Changing... (Style Ka Badlaav)</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Downton ki kahani 1912 se 1920s tak jaati hai. Yeh design mein ek bahut bade badlaav ka time tha. Yeh shift sirf style ka nahi tha; yeh purani duniya (tradition) aur nayi duniya (modernity) ki takkar ko dikhata tha.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="card p-6 border-t-4 border-amber-800">
+                    <div class="image-container">
+                        <img src="Edwardian Style.jpg" alt="Downton ka purana Edwardian drawing room">
+                    </div>
+                    <h3 class="text-3xl font-bold mb-3 mt-6">Phase 1: Edwardian Style</h3>
+                    <p class="mb-4 text-gray-600">(Shuru ke Seasons) Yeh style puraane "Victorian" style se related tha. Yeh Lord Grantham ka style tha - traditional.</p>
+                    <h5 class="font-bold mb-2">Kaisa tha?</h5>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Bhaari (heavy) furniture</li>
+                        <li>Thoda cluttered (bhara-bhara)</li>
+                        <li>Dark colours</li>
+                        <li>Har cheez 'grand' aur 'formal'</li>
+                    </ul>
+                </div>
+                <div class="card p-6 border-t-4 border-teal-500">
+                    <div class="image-container">
+                        <img src="Art Deco.jpg" alt="Naya Art Deco style drawing room ya London flat">
+                    </div>
+                    <h3 class="text-3xl font-bold mb-3 mt-6 text-teal-800">Phase 2: Art Deco</h3>
+                    <p class="mb-4 text-gray-600">(Baad ke Seasons) 1920s (The Roaring Twenties) ka naya trend. Yeh style World War 1 ke baad aaya aur bilkul naya tha.</p>
+                    <h5 class="font-bold mb-2">Kaisa tha?</h5>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Modern aur Lighter (halka)</li>
+                        <li>Clean lines</li>
+                        <li>Geometric patterns (zig-zag, squares)</li>
+                        <li>Thoda "Jazzy" aur naya</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t-2 border-amber-200 max-w-xs mx-auto my-20">
+
+        <section id="get-the-look" class="my-16 scroll-mt-20">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-4xl font-bold mb-4">Get the Look: Downton Style Apne Ghar Mein</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Aapko Lord Grantham ki tarah rehne ke liye poora castle khareedne ki zaroorat nahi hai! Aap kuch simple cheezon se woh "Downton vibe" apne ghar laa sakte hain.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-6">
+                    <div class="image-container">
+                        <img src="Jewel Tones.jpg" alt="Velvet sofa in emerald green with gold accents">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 mt-6">1. Jewel Tones Try Karein</h3>
+                    <p class="text-gray-700">Apni deewar ko deep emerald green, sapphire blue, ya burgundy (deep red) paint karein. Ya phir inn colours ke cushions ya parde use karein.</p>
+                </div>
+                <div class="card p-6">
+                    <div class="image-container">
+                        <img src="gold accents.jpg" alt="Large golden ornate mirror on a wall">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 mt-6">2. Go for Gold (Metallic Accents)</h3>
+                    <p class="text-gray-700">Ek bada, golden frame wala sheesha (mirror) lagayein. Photo frames, lamps, ya table ke legs... thoda sa gold instant "royal" look deta hai.</p>
+                </div>
+                <div class="card p-6">
+                    <div class="image-container">
+                        <img src="Velvet Tones.jpg" alt="Luxurious velvet armchair">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 mt-6">3. Fabric Ki Feel</h3>
+                    <p class="text-gray-700">Velvet ka ek sofa ya do velvet armchairs try karein. Agar yeh possible nahi, toh sirf velvet ke cushion covers bhi "Upstairs" wali feeling denge.</p>
+                </div>
+                <div class="card p-6">
+                    <div class="image-container">
+                        <img src="Gallary Wall.jpg" alt="Elegant gallery wall with three large portrait-style frames">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 mt-6">4. Gallery Wall</h3>
+                    <p class="text-gray-700">Chote-chote photo frames use karne ki jagah, 2-3 bade portrait-style frames lagayein. Yeh ek classic look deta hai.</p>
+                </div>
+                <div class="card p-6">
+                    <div class="image-container">
+                        <img src="Statement Lighting.jpg" alt="Crystal chandelier hanging in a classic room">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 mt-6">5. Statement Lighting</h3>
+                    <p class="text-gray-700">Ek chota, crystal-style ka chandelier ya ek elegant table lamp aapke room ka centre-piece ban sakta hai.</p>
+                </div>
+                <div class="card p-6">
+                    <div class="image-container">
+                        <img src="fresh flowers.jpg" alt="Vase of fresh flowers on a polished wooden table">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 mt-6">6. Fresh Flowers</h3>
+                    <p class="text-gray-700">Downton mein har room mein hamesha fresh flowers hote they. Yeh sabse aasan tareeka hai ghar mein life aur elegance laane ka.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t-2 border-amber-200 max-w-xs mx-auto my-20">
+
+        <section id="conclusion" class="my-16 scroll-mt-20">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="image-container mx-auto max-w-xl">
+                    <img src="Full House.jpg" alt="Highclere Castle ke saamne khadi poori Grantham family aur saare servants">
+                </div>
+                <h2 class="text-4xl font-bold mb-4 mt-6">Parting Shot (Ghar Ek Character Hai)</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Downton Abbey ka interior design sirf "sundar" nahi hai. Yeh ek poora system dikhata hai.
+                    <br><br>
+                    <strong>Upstairs</strong> ka har room status, power aur comfort ke baare mein tha.
+                    <br>
+                    <strong>Downstairs</strong> ka har kona efficiency, hard work aur service ke baare mein tha.
+                    <br><br>
+                    Yeh ghar do alag-alag duniyaon ko ek hi chhat (roof) ke neeche rakhta tha. Aur yahi cheez 'Downton Abbey' ko itna fascinating banati hai. Yeh sirf ek ghar ki nahi, balki ek poore yug (era) ke khatam hone ki kahani hai.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-600">
+            The Highclere Digest - Downton Ka Style Guide (Vol. 1) | Interactive Edition
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+            const mobileNav = document.getElementById('mobile-nav');
+
+            function showWorld(world) {
+                const upstairsContent = document.getElementById('upstairs-content');
+                const downstairsContent = document.getElementById('downstairs-content');
+                const upstairsBtn = document.getElementById('upstairs-btn');
+                const downstairsBtn = document.getElementById('downstairs-btn');
+
+                if (world === 'upstairs') {
+                    upstairsContent.classList.remove('hidden');
+                    downstairsContent.classList.add('hidden');
+                    upstairsBtn.classList.add('tab-active');
+                    downstairsBtn.classList.remove('tab-active');
+                } else {
+                    upstairsContent.classList.add('hidden');
+                    downstairsContent.classList.remove('hidden');
+                    upstairsBtn.classList.remove('tab-active');
+                    downstairsBtn.classList.add('tab-active');
+                }
+            }
+            window.showWorld = showWorld;
+
+            function updateActiveNav() {
+                let current = '';
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach((link) => {
+                    link.classList.remove('nav-active');
+                    if (link.getAttribute('href') === #${current}) {
+                        link.classList.add('nav-active');
+                    }
+                });
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = e.currentTarget.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            mobileNav.addEventListener('change', (e) => {
+                 const targetId = e.target.value;
+                 const targetElement = document.querySelector(targetId);
+                 if(targetElement) {
+                     window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                 }
+            });
+
+            window.addEventListener('scroll', updateActiveNav);
+            updateActiveNav();
+            showWorld('upstairs');
+        });
+    </script>
+
+</body>
+</html>
